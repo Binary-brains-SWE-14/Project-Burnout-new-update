@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" type="ico" href="android-chrome-192x192.png"/>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="side-menu">
+        <div class="brand-logo">
+            <img src="android-chrome-192x192.png" alt="Company logo">
+        </div>
+        <br><br>
+        <ul>
+            <li><a href="Dashboard.html"><span>Dashboard</span></a> </li>
+            <li><a href="admin.html"><span>Admin Control Panel</span></a></li>
+            <li><a href="Inventory.html"><span>Inventory</span></a> </li>
+            <li><a href="sales.html"><span>Sales</span></a> </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="search.png" alt=""></button>
+                </div>
+                <script>
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
+                <div class="user">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Sign Out</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a class="sign-out" >Sign Out</a>
+                        </div>
+                    </div>
+                    <div class="img-case">
+                        <img src="admin.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <a href="admin.html">
+                            <img src="admin.jpg" id="ad">
+                            <p class="admin">ADMIN CONTROL PANEL</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="sales.html">
+                            <img src="sell.jpg">
+                            <p class="sell">SALES</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="Inventory.html">
+                            <img src="inventory.jpg" id="inv">
+                            <p>INVENTORY</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content-2">
+                <div class="recent-sales">
+                    <div class="title">
+                        <h2>Inventory</h2>
+                        <a href="Inventory.html" class="btn">View All</a>
+                    </div>
+                    <table class="search">
+                        <tr>
+                          <th>#</th>
+                
+                          <th>TYPE</th>
+                
+                          <th>BRAND</th>
+                
+                          <th>SERIAL NUMBER</th>
+                
+                          <th>DATE</th>
+                
+                          <th>QUANTITY</th>
+                
+                          <th></th>
+                        </tr>
+                
+                        <tr>
+                          <td>1</td>
+                
+                          <td>---</td>
+                
+                          <td>---</td>
+                
+                          <td>UJ1368</td>
+                
+                          <td>18 Nov 1962</td>
+                
+                          <td>50</td>
+                
+                        </tr>
+                
+                        <tr>
+                          <td>2</td>
+                
+                          <td>---</td>
+                
+                          <td>---</td>
+                
+                          <td>TG1368</td>
+                
+                          <td>18 Dec 1962</td>
+                
+                          <td>20</td>
+                
+                        </tr>
+                
+                        <tr>
+                          <td>3</td>
+                
+                          <td>---</td>
+                
+                          <td>---</td>
+                
+                          <td>YF1368</td>
+                
+                          <td>18 Nov 1972</td>
+                
+                          <td>400</td>
+                
+                        </tr>
+                
+                        <tr>
+                          <td>4</td>
+                
+                          <td>---</td>
+                
+                          <td>---</td>
+                
+                          <td>RS1368</td>
+                
+                          <td>18 Mar 1982</td>
+                
+                          <td>63</td>
+                
+                        </tr>
+                
+                        <tr>
+                          <td>5</td>
+                
+                          <td>---</td>
+                
+                          <td>---</td>
+                
+                          <td>DX1368</td>
+                
+                          <td>18 Mar 1982</td>
+                
+                          <td>300</td>
+                
+                        </tr>
+                
+                        <tr>
+                          <td>6</td>
+                
+                          <td>---</td>
+                
+                          <td>---</td>
+                
+                          <td>JB1368</td>
+                
+                          <td>18 Mar 1982</td>
+                
+                          <td>75</td>
+                
+                        </tr>
+                
+                        <tr>
+                          <td>7</td>
+                
+                          <td>---</td>
+                
+                          <td>---</td>
+                
+                          <td>KV1368</td>
+                
+                          <td>18 Mar 1982</td>
+                
+                          <td>200</td>
+                
+                        </tr>
+                
+                        <tr>
+                          <td>8</td>
+                
+                          <td>---</td>
+                
+                          <td>---</td>
+                
+                          <td>NG1368</td>
+                
+                          <td>18 Mar 1982</td>
+                
+                          <td>40</td>
+                
+                          
+                        </tr>
+                      </table>
+                </div>
+                <div class="new-stock">
+                    <div class="title">
+                        <h2>Sales</h2>
+                        <a href="sales.html" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                          <th>#</th>
+              
+                          <th>ITEM</th>
+              
+                          <th>BRAND</th>
+              
+                          <th>PRICE</th>
+              
+                          <th>DATE</th>
+              
+                          <th>QUANTITY</th>
+            
+                          <th></th>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+              
+                          <td>---</td>
+              
+                          <td>---</td>
+              
+                          <td>125$</td>
+              
+                          <td>18/03/12</td>
+              
+                          <td>50</td>
+            
+            
+                        </tr>
+              
+                        <tr>
+                          <td>2</td>
+              
+                          <td>---</td>
+              
+                          <td>---</td>
+              
+                          <td>630$</td>
+              
+                          <td>18/03/12</td>
+              
+                          <td>20</td>
+            
+            
+                        </tr>
+              
+                        <tr>
+                          <td>3</td>
+              
+                          <td>---</td>
+              
+                          <td>---</td>
+              
+                          <td>60$</td>
+              
+                          <td>18/03/12</td>
+              
+                          <td>400</td>
+            
+            
+                        </tr>
+              
+                        <tr>
+                          <td>4</td>
+              
+                          <td>---</td>
+              
+                          <td>---</td>
+              
+                          <td>250$</td>
+              
+                          <td>18/03/12</td>
+              
+                          <td>63</td>
+            
+            
+                        </tr>
+              
+                        <tr>
+                          <td>5</td>
+              
+                          <td>---</td>
+              
+                          <td>---</td>
+              
+                          <td>1000$</td>
+              
+                          <td>18/03/12</td>
+              
+                          <td>300</td>
+            
+            
+                        </tr>
+              
+                        <tr>
+                          <td>6</td>
+              
+                          <td>---</td>
+              
+                          <td>---</td>
+              
+                          <td>100$</td>
+              
+                          <td>18/03/12</td>
+              
+                          <td>75</td>
+            
+            
+                        </tr>
+              
+                        <tr>
+                          <td>7</td>
+              
+                          <td>---</td>
+              
+                          <td>---</td>
+              
+                          <td>50$</td>
+              
+                          <td>18/03/12</td>
+              
+                          <td>200</td>
+            
+            
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </div>
+ <script type="module" defer src="./board.js"></script>
+</body>
+
+</html
